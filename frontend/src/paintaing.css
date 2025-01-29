@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .form-wrapper {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-heading {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .form-dropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .toggle-buttons,
+  .size-buttons,
+  .painting-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .toggle-button,
+  .size-button,
+  .painting-button {
+    flex: 1;
+    padding: 12px 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .toggle-button.active,
+  .size-button.active,
+  .painting-button.active {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .info-text {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .info-text a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .next-button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s ease;
+  }
+  
+  .next-button:hover {
+    background: #0056b3;
+  }
+  

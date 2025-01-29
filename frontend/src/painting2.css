@@ -1,0 +1,132 @@
+/* PaintPreferenceForm.css */
+
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #f3f4f6;
+  }
+  
+  .form-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+  }
+  
+  .form-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+  .form-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 32px;
+    color: #333333;
+  }
+  
+  .options-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  @media (min-width: 768px) {
+    .options-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .option-card {
+    background-color: #ffffff; /* Solid background color to fix transparency */
+    border-radius: 12px;
+    padding: 24px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .option-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .option-card.selected {
+    border-color: #ff5722;
+    box-shadow: 0 8px 24px rgba(255, 87, 34, 0.4);
+  }
+  
+  .option-card.economy {
+    background: linear-gradient(145deg, #4caf50, #388e3c); /* Updated gradient for better visual */
+    color: #ffffff;
+  }
+  
+  .option-card.premium {
+    background: linear-gradient(145deg, #2196f3, #1976d2); /* Updated gradient */
+    color: #ffffff;
+  }
+  
+  .option-card.luxury {
+    background: linear-gradient(145deg, #ff9800, #f57c00); /* Updated gradient */
+    color: #ffffff;
+  }
+  
+  .option-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  
+  .option-description {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  
+  .option-details {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+  }
+  
+  .option-details li {
+    margin-bottom: 6px;
+  }
+  
+  .navigation-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+  }
+  
+  .nav-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-button.submit {
+    background-color: #ff5722;
+    color: #ffffff;
+  }
+  
+  .nav-button.submit:disabled {
+    background-color: #bdbdbd;
+    cursor: not-allowed;
+  }
+  
+  .nav-button.submit:not(:disabled):hover {
+    background-color: #e64a19;
+  }
+  

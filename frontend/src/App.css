@@ -1,0 +1,244 @@
+.navbar {
+  position: fixed;  /* Stick the navbar to the top */
+  top: 0;            /* Keep it at the top of the page */
+  left: 0;
+  width: 100%;       /* Ensure it spans the full width */
+  background-color: white; /* Background color for navbar */
+  padding: 10px 20px;
+  z-index: 1000;     /* Keep the navbar on top of other content */
+  
+}
+
+.navbar-logo {
+  height: 50px; /* Make the image fill the height of the navbar */
+  width: auto;  /* Maintain the aspect ratio of the image */
+  object-fit: contain; /* Ensure the image maintains its aspect ratio */
+}
+
+
+
+/* Container for the navbar content */
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* This ensures the navbar is spaced properly */
+  align-items: center;
+  width: 100%;
+}
+
+/* Right side container with button and phone number */
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between button and phone number */
+}
+
+.custom-btn {
+  background-color: #85d8eb; /* Green */
+  color: white;              /* Text color */
+  border: none;              /* Remove default border */
+  padding: 10px 20px;        /* Padding around the text */
+  border-radius: 5px;        /* Rounded corners */
+  cursor: pointer;          /* Pointer cursor on hover */
+  font-size: 18px;           /* Font size */
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+
+
+/* phone number */
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.phone-icon {
+  font-size: 24px;  /* Size of the phone icon */
+  margin-right: 10px;  /* Space between the icon and the phone number */
+}
+
+.phone-number {
+  font-size: 18px;  /* Font size of the phone number */
+  font-weight: bold;
+}
+
+/* Add margin to the top of the page content to prevent overlap with navbar */
+body {
+  margin-top: 60px; /* Adjust this value according to the navbar height */
+}
+
+
+
+
+/* Estimate css */
+.app-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.form-step {
+  margin: 20px 0;
+}
+
+input,
+select {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* estimateForm */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.background-image {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../public/estimate.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.form-container {
+  position: absolute;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  
+}
+
+.form-card {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.form-header h2 {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.form-input,
+.form-select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-next,
+.btn-prev,
+.btn-submit {
+  background-color: #007bff;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+
+/* home */
+/* App.css */
+/* Ensure there's no extra space or margin around the body */
+
+
+
+.navButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #78e5eb;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.background-image2 {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../public/main\ 2.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center; /* Center the form horizontally */
+  align-items: flex-end; /* Position the form at the bottom */
+}
+
+
+.estimateform-container {
+  width: 90%; /* Adjust based on your form width */
+  max-width: 1200px;
+  padding: 20px; /* Add padding around the form */
+  border-radius: 8px; /* Optional: Rounded corners */
+  
+  text-align: center; /* Center-align the form content */
+}
