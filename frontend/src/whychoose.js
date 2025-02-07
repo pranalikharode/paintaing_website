@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
             Commitment To Customer Satisfaction
           </h3>
           <p className="text-gray-600">
-            The team at AapkaPainter <span className="font-bold">ensured</span>{" "}
+            The team at AapkaPainter <span className="font-bold" style={{ color: 'blue' }} >ensured</span>{" "}
             that all my requirements were acknowledged and that I was{" "}
             <span className="font-bold">satisfied</span> after each phase of the
             paint job. Whenever I come home after a tiring day, the walls
@@ -80,7 +80,7 @@ const WhyChooseUs = () => {
             <p className="text-gray-500">Happy homes</p>
           </div>
           <div className="text-center">
-            <h4 className="text-4xl font-bold text-gray-800">4.6 ⭐</h4>
+            <h4 className="text-4xl font-bold text-gray-800">4.6 <img src = "https://aapkapainter.com/assets/newdesign/images/ig_landing/star-img.webp"alt="star img" width = "18px" height={"17px"}/></h4>
             <p className="text-gray-500">8K+ Google Reviews</p>
           </div>
           <div className="text-center">

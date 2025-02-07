@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="container-fluid navbar-container">
         
         {/* Image logo */}
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" >
           <img src="/shiv.jpg" className="navbar-logo" alt="Shiv Enterprises" />
         </a>
 
