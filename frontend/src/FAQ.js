@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./FAQ.css"; // Import the CSS file
+import "./styles/FAQ.css"; // Make sure this file exists
 
 const FAQ = () => {
     const [activeIndex, setActiveIndex] = useState(null);
@@ -20,25 +20,30 @@ const FAQ = () => {
 
     return (
         <div className="faq-container">
-            <p className="faq-heading">Frequently</p>
-            <p className="faq-subheading">Asked Questions</p>
+            {/* Left Section - Heading */}
+            <div className="faq-heading-container">
+                <h2>Frequently</h2>
+                <h2 className = "faq-bold">Asked Questions</h2>
+            </div>
 
-            {faqs.map((faq, index) => (
-                <div 
-                    key={index} 
-                    className={`faq-item ${activeIndex === index ? "active" : ""}`} 
-                    onClick={() => toggleFAQ(index)}
-                >
-                    <div className="faq-question">
-                        {faq.question}
-                        <span className={`arrow ${activeIndex === index ? "rotated" : ""}`}>▼</span>
+            {/* Right Section - FAQ Boxes (Stacked Vertically) */}
+            <div className="faq-list">
+                {faqs.map((faq, index) => (
+                    <div 
+                        key={index} 
+                        className={`faq-item ${activeIndex === index ? "active" : ""}`} 
+                        onClick={() => toggleFAQ(index)}
+                    >
+                        <div className="faq-question">
+                            {faq.question}
+                            <span className={`arrow ${activeIndex === index ? "rotated" : ""}`}>▼</span>
+                        </div>
+                        {activeIndex === index && <div className="faq-answer">{faq.answer}</div>}
                     </div>
-                    {activeIndex === index && <div className="faq-answer">{faq.answer}</div>}
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
     );
 };
 
 export default FAQ;
-

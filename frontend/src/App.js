@@ -2,22 +2,19 @@ import React from "react";
 import Navbar from './navbar'; 
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
-import MultiStepForm from "./multistepform";
-import EstimateForm from './EstimateForm';
-import Painting from './painting2';
 import Whychoose from './whychoose';
+import FAQ from "./FAQ"; 
+
 
 function App() {
   
 
   return (
-    <div>
+    
+      <div> 
       <Navbar />
-       
-       <MultiStepForm />
-      <EstimateForm/> 
-      <Painting />
       <Whychoose />
+      <FAQ />
     </div>
   );
 }
